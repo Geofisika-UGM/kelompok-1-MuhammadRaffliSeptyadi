@@ -21,19 +21,7 @@ def hdr(r,g,h,hmax):
     hdr = r*h*g
     z= hmax-h
     
-    if h < 100:
-            h1=h
-    elif h == 100:
-            h1=h
-    if z == 100:
-        z1=z
-    elif z < 100:
-        z1=z
-    for i in range(1,11):
-        if h > 10*10**i:
-            h1=h/10**i
-        if z > 10*10**i:
-            z1=z/10**i 
+     
     
     h2 = 200*(h1/(h1+z1))
     z2 = 200*(z1/(h1+z1))
