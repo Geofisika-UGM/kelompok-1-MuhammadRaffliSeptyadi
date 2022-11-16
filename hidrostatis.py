@@ -1,10 +1,5 @@
 
 import turtle
-def hidrostatis(r,g,h,hmax):
-    if h > hmax:
-        print('masukan nilai yang benar')
-    else:
-        hdr(r,g,h,hmax)
 
 def hdr(r,g,h,hmax):
     """Menghitung Tekanan hidrostatis (massa jenis zat cair,gravitasi,kedalaman bocor (meter),tinggi tabung asli (meter) ) """
@@ -86,3 +81,10 @@ def hdr(r,g,h,hmax):
     
     turtle.done()
     turtle.mainloop()
+
+def hidrostatis(r,g,h,hmax):
+    if h > hmax:
+        print('masukan nilai yang benar')
+    else:
+        hdr(r,g,h,hmax)
+
