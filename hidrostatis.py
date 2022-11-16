@@ -10,8 +10,8 @@ def hdr(r,g,h,hmax):
     hdr = r*h*g
     z= hmax-h
     
-    h2 = 200*(h/(h+z))
-    z2 = 200*(z/(h+z))
+    h2 = 300*(h/(h+z))
+    z2 = 300*(z/(h+z))
         
     x=6
     t.pensize(2)
