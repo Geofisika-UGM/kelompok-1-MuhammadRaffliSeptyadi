@@ -69,10 +69,7 @@ def hidrostatis(rho,ge,ha,haem):
         t.write("Tekanan Hidrosatis :"+ str(hdr) + "N/m^2")
     
 
-
     t = turtle.RawTurtle(canvas)
-
     bool(rho,ge,ha,haem)
     t.hideturtle()
-
     root.mainloop()
