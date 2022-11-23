@@ -1,10 +1,11 @@
 import tkinter as tk
 import turtle
-
+import threading
 def hidrostatis(rho,ge,ha,haem):
     root = tk.Tk()
     canvas = tk.Canvas(root, width=500, height=600)
     canvas.pack()
+    
     def bool(r,g,h,hmax):
         if h > hmax:
             print('masukan nilai yang benar')
@@ -12,7 +13,7 @@ def hidrostatis(rho,ge,ha,haem):
             hdr(r,g,h,hmax)
         
     def hdr(r,g,h,hmax):
-    
+        t = turtle.RawTurtle(canvas)
         """Menghitung Tekanan hidrostatis (massa jenis zat cair,gravitasi,kedalaman bocor (meter),tinggi tabung asli (meter) ) """
         t.penup()
         t.goto(-100,-150)
@@ -67,9 +68,7 @@ def hidrostatis(rho,ge,ha,haem):
         t.penup()
         t.goto(-100,-170)
         t.write("Tekanan Hidrosatis :"+ str(hdr) + "N/m^2")
-    
-
-    t = turtle.RawTurtle(canvas)
-    bool(rho,ge,ha,haem)
-    t.hideturtle()
+        t.hideturtle()
+    t1 = threading.Thread(target=bool, args=(rho,ge,ha,haem))
+    t1.start()
     root.mainloop()
