@@ -188,4 +188,4 @@ def hidrostatis(rho,ge,ha,haem):
 from hidrostatis import hidrostatis
 %timeit hidrostatis
 
-#### Pertama, kami mengambil fungsi hidrostatis dari modul hidrostatis yang sudah dibuat. Timeit berfungsi untuk menghitung waktu dalam menjalankan program ini. Kemudian, dilanjutkan dengan menulis fungsi yang akan diukur kecepatannya saat menjalankan program.
+#### Kami mengambil fungsi hidrostatis dari modul hidrostatis yang sudah dibuat. Timeit berfungsi untuk menghitung waktu dalam menjalankan program ini. Kemudian, dilanjutkan dengan menulis fungsi yang akan diukur kecepatannya saat menjalankan program. Program ini sudah optimal dengan menghabiskan waktu 21 ns.
