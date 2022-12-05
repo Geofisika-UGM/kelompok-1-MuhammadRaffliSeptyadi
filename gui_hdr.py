@@ -6,9 +6,6 @@ from hidrostatis import hidrostatis
 root = Tk()
 root.geometry("400x150")
 
-labelfr = LabelFrame(root,text="result",padx=20,pady=20)
-labelfr.place(x=60,y=380)
-
 x = Label(root,text = "Masukan rho")
 g= Label(root,text = "Gaya Gravitasi")
 h = Label(root,text = " Masukan\n kedalaman bocor\n(dalam meter)")
