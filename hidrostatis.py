@@ -14,7 +14,7 @@ def hidrostatis(rho,ge,ha,haem):
         
     def hdr(r,g,h,hmax):
         t = turtle.RawTurtle(canvas)
-        """Menghitung Tekanan hidrostatis (massa jenis zat cair,gravitasi,kedalaman bocor (meter),tinggi tabung asli (meter) ) """
+        """Menghitung Tekanan hidrostatis (massa jenis zat cair, gravitasi, kedalaman bocor (meter), tinggi tabung asli (meter) ) """
         t.penup()
         t.goto(-100,-150)
         t.pendown()
