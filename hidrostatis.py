@@ -1,7 +1,9 @@
-import tkinter as tk
-import turtle
-import threading
-def hidrostatis(rho,ge,ha,haem):
+import tkinter as tk #import tkinter untuk memberikan kemudahan dalam pembuatan program berbasis grafis
+import turtle #import turtle guna memerintahkan untuk menggambar sesuatu di canvas
+import threading #import threading agar dapat  menjalankan suatu tugas pada satu waktu
+
+#membuat definisi rumus hidrostatis
+def hidrostatis(rho,ge,ha,haem): 
     root = tk.Tk()
     canvas = tk.Canvas(root, width=500, height=600)
     canvas.pack()
