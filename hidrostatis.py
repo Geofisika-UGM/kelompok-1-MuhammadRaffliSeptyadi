@@ -8,10 +8,12 @@ def hidrostatis(rho,ge,ha,haem):
     
     def bool(r,g,h,hmax):
         if h > hmax:
-            print('masukan nilai yang benar')
+            salah()
         else:
             hdr(r,g,h,hmax)
-        
+    def salah():
+        t = turtle.RawTurtle(canvas)
+        t.write("masukan nilai yang benar")
     def hdr(r,g,h,hmax):
         t = turtle.RawTurtle(canvas)
         """Menghitung Tekanan hidrostatis (massa jenis zat cair,gravitasi,kedalaman bocor (meter),tinggi tabung asli (meter) ) """
